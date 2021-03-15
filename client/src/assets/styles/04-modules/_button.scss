@@ -1,0 +1,68 @@
+.btn,
+%btn {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 4px;
+  outline: none;
+  border: 0;
+  counter-reset: #fff;
+  text-transform: uppercase;
+  background-color: #222222;
+  cursor: pointer;
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__line {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+
+.toggle-button.open {
+  // transition: all 0.5s ease-in-out;
+  transition: all 13s ease-out;
+
+
+  .line-middle {
+    opacity: 0;
+    // background: transparent;
+  }
+
+  .line-top {
+    transform: rotate(45deg) translateY(10px);
+  }
+
+  .line-bottom {
+    transform: rotate(-45deg) translateY(-10px);
+  }
+}
+
+.search-cancel-btn, .search-icon-btn  {
+    background: transparent;
+    color: green;
+    border: none;
+    outline: none;
+  transition: all 5s ease-in-out;
+
+
+    svg     {
+        color: red;
+        background-color: transparent;
+    }
+}
