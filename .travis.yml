@@ -12,3 +12,4 @@ before_script: npm install
 script:
   # - npm run cypress:run
   - $(npm bin)/cypress run --record
+  - npm start --silent &
