@@ -12,7 +12,8 @@ before_script:
   # - npm install
   - npm start --silent &
 script:
-  - $(npm bin)/cypress run --coverage --record --key $recordKey 
+  - $(npm bin)/cypress run  --record --key $recordKey 
+  - npm run cypress:run --coverage --record --key $recordKey 
 
 after_success:
   - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
