@@ -12,7 +12,4 @@ before_script:
   # - npm install
   - npm start --silent &
 script:
-  - npm run cypress:run
-  - $(npm bin)/cypress run
-  - npm run build
- 
+  - npm run cypress:run --record --key $recordKey 
