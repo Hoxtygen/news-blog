@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
-    "@types/node": "^12.20.12",
-    "@types/react": "^17.0.5",
-    "@types/react-dom": "^17.0.3",
+    "@types/node": "^12.20.13",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
     "@types/react-router-dom": "^5.1.7",
     "@types/redux-logger": "^3.0.8",
     "axios": "^0.21.1",
@@ -51,5 +51,6 @@
     "@cypress/instrument-cra": "^1.4.0",
     "cypress": "^6.9.1",
     "start-server-and-test": "^1.12.1"
+
   }
 }
