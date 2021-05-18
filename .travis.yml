@@ -2,12 +2,11 @@ language: node_js
 node_js:
   - "stable"
 cache:
-  npm: true
+  npm: false
   directories:
     - node_modules
     - ~/.cache
-install:
-  - npm ci
+
 before_script: 
   # - npm install
   - npm start --silent &
