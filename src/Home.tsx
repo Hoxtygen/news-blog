@@ -1,11 +1,15 @@
-import React from 'react'
+import StoriesIndex from "./container/story/StoriesIndex";
+import Header from "./shared/header/container/Header";
+
 
 const Home = () => {
-    return (
-        <div>
-            <h1>Welcome to Our News Blog</h1>
-        </div>
-    )
-}
+ 
+  return (
+    <div>
+      <Header />
+      <StoriesIndex />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
